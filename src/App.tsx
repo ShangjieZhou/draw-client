@@ -1,17 +1,16 @@
-import React from "react";
-import logo from "./logo.svg";
+
 import "./App.css";
 import SketchPad from "./components/SketchPad";
+import { Routes, Route } from "react-router-dom";
+import Entry from "./pages/Entry";
+import Room from "./pages/Room";
 
 function App() {
   return (
-    <div className="w-screen min-h-screen">
-      <header className="w-full h-full">
-        <div className="w-96 h-96">
-          <SketchPad />
-        </div>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Entry />} />
+      <Route path="/room/:roomId" element={<Room />} />
+    </Routes>
   );
 }
 

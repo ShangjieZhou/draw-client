@@ -27,3 +27,15 @@
 .App-link {
   color: #61dafb;
 }
+
+/* Add this to your App.css */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  touch-action: none; /* Prevent touch-based scroll */
+  overscroll-behavior: none; /* Prevent rubber band effect */
+}
+
